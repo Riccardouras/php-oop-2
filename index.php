@@ -12,6 +12,7 @@
     <ul>
         <li><a href="category.php?categoria=cibo">Cibo</a></li>
         <li><a href="category.php?categoria=cuccia">Cuccia</a></li>
+        <li><a href="category.php?categoria=gioco">Gioco</a></li>
     </ul>
 </body>
 </html>
