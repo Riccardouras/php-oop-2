@@ -30,17 +30,21 @@
     $categoria = $_GET['categoria'];
     include './product.php';
     // var_dump($prodotti);
-  
+ 
     foreach ($prodotti as $prodotto) {
         if (strcasecmp($prodotto->categoria, $categoria) === 0) {
             echo '<div class="card">';
             echo '<img src="' . $prodotto->immagine . '" alt="' . $prodotto->nome . '">';
             echo '<h3>' . $prodotto->nome . '</h3>';
             echo '<p>Prezzo: $' . $prodotto->prezzo . '</p>';
-            echo '<p> Categoria: ' .  $prodotto->categoria . '</p>';
+            echo '<p> Categoria:' .  $prodotto->categoria . '</p>';
+            if ($prodotto->categoria == "Cibo") {
+                echo '<p> Peso:' .  $prodotto->weight . '</p>';
+            }
             echo '</div>';
         }
     }
+    
     
     ?>
     <br>
