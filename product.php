@@ -2,7 +2,7 @@
 class ProdottoSenzaPeso extends Exception {
     public function __construct($message = "Il prodotto non ha un peso specificato") {
         parent::__construct($message);
-    }
+}
 }
 trait QuantitaProdotto{
     public $weight;
@@ -17,7 +17,7 @@ class Prodotto {
     public $categoria;
     public $immagine;
 
-    public function __construct($nome, $prezzo, $categoria, $immagine, $weight) {
+    public function __construct($nome, $prezzo, $categoria, $immagine, $weight=null) {
         $this->nome = $nome;
         $this->prezzo = $prezzo;
         $this->categoria = $categoria;
@@ -25,7 +25,7 @@ class Prodotto {
 
         if ($categoria === 'Cibo') {
             $this->impostaPeso($weight);
-        } elseif ($weight === 0) {
+        } elseif ($weight == 0) {
             throw new ProdottoSenzaPeso();
         }
     }

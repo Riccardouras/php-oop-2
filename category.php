@@ -28,7 +28,7 @@
     <h2>Prodotti:</h2>
     <?php
     $categoria = $_GET['categoria'];
-    include 'product.php';
+    include './product.php';
     // var_dump($prodotti);
  
     foreach ($prodotti as $prodotto) {
@@ -38,17 +38,11 @@
             echo '<h3>' . $prodotto->nome . '</h3>';
             echo '<p>Prezzo: $' . $prodotto->prezzo . '</p>';
             echo '<p> Categoria:' .  $prodotto->categoria . '</p>';
-            try {
-                if (!isset($prodotto->weight)) {
-                    throw new ProdottoSenzaPeso();
-                }
-                echo '<p> Peso:' .  $prodotto->weight . '</p>';
-            } catch (ProdottoSenzaPeso $e) {
-                echo '<p>Questo prodotto non ha un peso specificato.</p>';
-            }
+            echo '<p> Peso:' .  $prodotto->weight . '</p>';
             echo '</div>';
         }
     }
+    
     ?>
     <br>
     <a href="index.php">Torna alla homepage</a>
