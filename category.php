@@ -37,6 +37,7 @@
             echo '<img src="' . $prodotto->immagine . '" alt="' . $prodotto->nome . '">';
             echo '<h3>' . $prodotto->nome . '</h3>';
             echo '<p>Prezzo: $' . $prodotto->prezzo . '</p>';
+            echo '<p> Categoria:' .  $prodotto->categoria . '</p>';
             echo '</div>';
         }
     }
