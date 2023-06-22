@@ -1,7 +1,7 @@
 <?php
+
 trait QuantitaProdotto{
     public $weight;
-    
     public function impostaPeso($weight, $unit="kg"){
         $this->weight = "$weight $unit";
     }
@@ -21,6 +21,8 @@ class Prodotto {
 
         if ($categoria === 'Cibo') {
             $this->impostaPeso($weight);
+        } elseif ($weight === 0) {
+            throw new ProdottoSenzaPeso();
         }
     }
 }
@@ -40,7 +42,11 @@ function getProdotti() {
     return $prodotti;
 }
 
-
+class ProdottoSenzaPeso extends Exception {
+    public function __construct($message = "Il prodotto non ha un peso specificato") {
+        parent::__construct($message);
+    }
+}
 $prodotti = getProdotti();
 
 
