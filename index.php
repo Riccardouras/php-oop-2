@@ -26,20 +26,14 @@
     <h2>Categorie:</h2>
     <ul>
         <li>
-            <img style="width: 200px;" src="https://th.bing.com/th/id/R.87cd5cef16d3267b94f87b78618f72ad?rik=2Mb2xT%2ft%2fVKoHg&pid=ImgRaw&r=0" alt="carlino">
-            <br> 
-            <a href="category.php?categoria=cibo">Cibo</a> 
+            <a href="category.php?categoria=cibo"><img style="width: 200px;" src="https://th.bing.com/th/id/R.87cd5cef16d3267b94f87b78618f72ad?rik=2Mb2xT%2ft%2fVKoHg&pid=ImgRaw&r=0" alt="carlino"> <br>Cibo</a> 
         </li>
        
         <li>
-            <img src="https://emporiogenova.com/2393-thickbox_default/cuccia-cani-gatti-esterno-legno.jpg" alt="">
-            <br> 
-            <a href="category.php?categoria=cuccia">Cuccia</a>
+            <a href="category.php?categoria=cuccia"> <img src="https://emporiogenova.com/2393-thickbox_default/cuccia-cani-gatti-esterno-legno.jpg" alt="">  <br> Cuccia</a>
         </li>
         <li>
-            <img src="https://th.bing.com/th/id/OIP.Y1uAfzN13Y0CaueN-WIvPwHaEd?pid=ImgDet&rs=1" alt="">
-            <br> 
-            <a href="category.php?categoria=gioco">Gioco</a>
+            <a href="category.php?categoria=gioco"><img src="https://th.bing.com/th/id/OIP.Y1uAfzN13Y0CaueN-WIvPwHaEd?pid=ImgDet&rs=1" alt=""> <br> Gioco</a>
         </li>
     </ul>
 </body>
