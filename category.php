@@ -28,7 +28,7 @@
     <h2>Prodotti:</h2>
     <?php
     $categoria = $_GET['categoria'];
-    include 'Prodotto.php';
+    include 'product.php';
     // var_dump($prodotti);
  
     foreach ($prodotti as $prodotto) {

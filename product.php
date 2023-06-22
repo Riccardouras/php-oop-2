@@ -1,5 +1,9 @@
 <?php
-
+class ProdottoSenzaPeso extends Exception {
+    public function __construct($message = "Il prodotto non ha un peso specificato") {
+        parent::__construct($message);
+    }
+}
 trait QuantitaProdotto{
     public $weight;
     public function impostaPeso($weight, $unit="kg"){
@@ -42,11 +46,7 @@ function getProdotti() {
     return $prodotti;
 }
 
-class ProdottoSenzaPeso extends Exception {
-    public function __construct($message = "Il prodotto non ha un peso specificato") {
-        parent::__construct($message);
-    }
-}
+
 $prodotti = getProdotti();
 
 

@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-<h1>Benvenuto nel  nostro Negozio di Animali!</h1>
+<h1>Benvenuto nel nostro Negozio di Animali!</h1>
     
     <h2>Categorie:</h2>
     <ul>
